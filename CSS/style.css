@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+input,
+button {
+    margin: 8px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid transparent;
+    outline: none;
+    width: 200px;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid #23a6d5;
+    transform: scale(1.05);
+}
+
+button {
+    background: linear-gradient(135deg, #23a6d5, #23d5ab);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 140px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(35, 166, 213, 0.3);
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: none;
+    padding: 15px 12px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #23a6d5, #23d5ab);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+tr:hover td {
+    background-color: rgba(35, 166, 213, 0.05);
+}
+
+.error {
+    color: #e73c7e;
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 15px;
+    background: rgba(231, 60, 126, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #e73c7e;
+}
+
+.hidden {
+    display: none;
+}
