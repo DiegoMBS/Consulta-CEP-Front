@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://consultar-cep-d6179178d3a0.herokuapp.com;">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js" defer></script>
     <title>Consulta de CEP</title>
-
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <input type="text" id="cepInput" placeholder="Digite o CEP" maxlength="8">
         <button id="consultarBtn">Consultar</button>
         <div id="result"></div>
-        <div class="error" id="errorMessage"></div>
+        <div class="error hidden" id="errorMessage"></div>
     </div>
 
 
