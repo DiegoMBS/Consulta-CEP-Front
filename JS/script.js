@@ -26,7 +26,7 @@ document.getElementById('consultarBtn').addEventListener('click', async () => {
 
     try {
         const response = await fetchWithTimeout(
-            `https://consultar-cep-d6179178d3a0.herokuapp.com/consulta-cep/${sanitizedCep}`,
+            `https://consulta-cep-com-spring-boot.vercel.app//${sanitizedCep}`,
             10000 // Timeout de 10 segundos
         );
 
