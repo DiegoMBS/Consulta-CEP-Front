@@ -26,7 +26,7 @@ document.getElementById('consultarBtn').addEventListener('click', async () => {
 
     try {
         const response = await fetchWithTimeout(
-            `https://consulta-cep-com-spring-boot.vercel.app//${sanitizedCep}`,
+            `https://fresh-libby-dmsilva-93394af4.koyeb.app//${sanitizedCep}`,
             10000 // Timeout de 10 segundos
         );
 
