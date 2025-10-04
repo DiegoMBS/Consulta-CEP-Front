@@ -26,7 +26,7 @@ document.getElementById('consultarBtn').addEventListener('click', async () => {
 
     try {
         const response = await fetchWithTimeout(
-            `viacep.com.br/ws/${sanitizedCep}/json/`,
+            `http://viacep.com.br/ws/${sanitizedCep}/json/`,
             10000 // Timeout de 10 segundos
         );
 
