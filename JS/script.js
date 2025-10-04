@@ -26,7 +26,7 @@ document.getElementById('consultarBtn').addEventListener('click', async () => {
 
     try {
         const response = await fetchWithTimeout(
-            `https://fresh-libby-dmsilva-93394af4.koyeb.app/consulta-cep//${sanitizedCep}`,
+            `viacep.com.br/ws/${sanitizedCep}/json/`,
             10000 // Timeout de 10 segundos
         );
 
